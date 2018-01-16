@@ -3,34 +3,13 @@
 
 from selenium import webdriver
 from time import sleep
+import login
 
 
 def test():
-    '''
     driver = webdriver.Chrome(executable_path="chromedriver.exe")
-    driver.get("http://car.ctrip.com/")
-    driver.maximize_window()
+    login.login(driver)
     sleep(10)
-
-    # login
-    driver.find_element_by_class_name("cui_links_login").click()
-    driver.find_element_by_name("txtUserName").send_keys("17621380822")
-    driver.find_element_by_name("txtPwd").send_keys("Legend.1234")
-    driver.find_element_by_name("btnSubmit").click()
-    sleep(2)
-'''
-    driver = webdriver.Chrome(executable_path="chromedriver.exe")
-    driver.get("https://accounts.ctrip.com/member/login.aspx?BackUrl=http%3A%2F%2Fcar.ctrip.com%2F&responsemethod=get")
-    driver.maximize_window()
-    sleep(10)
-
-    # login
-    driver.find_element_by_name("txtUserName").send_keys("17621380822")
-    driver.find_element_by_name("txtPwd").send_keys("Legend.1234")
-    driver.find_element_by_name("btnSubmit").click()
-    sleep(10)
-
-
 
 
     # 选择时间
