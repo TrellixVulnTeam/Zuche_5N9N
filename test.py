@@ -70,13 +70,13 @@ def test():
 
     # 填写表单
     driver.find_element_by_css_selector("#lastName").clear()
-    driver.find_element_by_css_selector("#lastName").send_keys("ctrip")
+    driver.find_element_by_css_selector("#lastName").send_keys("")
     driver.find_element_by_css_selector("#firstName").clear()
-    driver.find_element_by_css_selector("#firstName").send_keys("test")
+    driver.find_element_by_css_selector("#firstName").send_keys("")
     driver.find_element_by_css_selector("#mobile").clear()
-    driver.find_element_by_css_selector("#mobile").send_keys("17621380822")
+    driver.find_element_by_css_selector("#mobile").send_keys("")
     driver.find_element_by_css_selector("#email").clear()
-    driver.find_element_by_css_selector("#email").send_keys("jt_sun@Ctrip.com")
+    driver.find_element_by_css_selector("#email").send_keys("")
 
     driver.find_element_by_name("age").click()
     sleep(2)
